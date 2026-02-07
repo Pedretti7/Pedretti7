@@ -25,6 +25,18 @@
       ],
       "foundation": "CPC, arts. 335 e 337.",
       "model": "Excelentíssimo(a) Senhor(a) Doutor(a) Juiz(a)..."
+    },
+    {
+      "id": "acao-indenizacao",
+      "title": "Ação de indenização",
+      "summary": "Reparação por danos materiais e morais.",
+      "requirements": [
+        "Dano, culpa e nexo causal",
+        "Provas documentais",
+        "Pedidos de indenização"
+      ],
+      "foundation": "Código Civil, arts. 186 e 927.",
+      "model": "Requer-se a condenação do réu..."
     }
   ],
   "procedures": [
@@ -51,6 +63,18 @@
       ],
       "foundation": "CPC, arts. 539-549.",
       "model": "O autor deposita a quantia devida..."
+    },
+    {
+      "id": "usucapiao",
+      "title": "Usucapião",
+      "summary": "Aquisição de propriedade pelo tempo.",
+      "requirements": [
+        "Posse mansa e pacífica",
+        "Decurso do prazo legal",
+        "Justo título (quando exigido)"
+      ],
+      "foundation": "CPC, arts. 1.238-1.244 e 216-A.",
+      "model": "Requer-se o reconhecimento da usucapião..."
     }
   ],
   "resources": [
@@ -77,20 +101,44 @@
       ],
       "foundation": "CPC, arts. 1.015-1.020.",
       "model": "Egrégio Tribunal, agravo de instrumento..."
+    },
+    {
+      "id": "embargos",
+      "title": "Embargos de declaração",
+      "summary": "Esclarecimento de decisão omissa ou contraditória.",
+      "requirements": [
+        "Omissão, contradição ou obscuridade",
+        "Prazo de 5 dias",
+        "Indicação do vício"
+      ],
+      "foundation": "CPC, art. 1.022.",
+      "model": "Requer-se o saneamento da decisão..."
     }
   ],
   "models": [
     {
       "id": "modelo-indenizacao",
-      "title": "Ação de indenização",
-      "summary": "Responsabilidade civil e danos.",
+      "title": "Modelo de ação de indenização",
+      "summary": "Peça comentada com responsabilidade civil.",
       "requirements": [
-        "Dano, culpa e nexo causal",
-        "Provas documentais",
-        "Pedidos de indenização"
+        "Qualificação das partes",
+        "Exposição dos fatos",
+        "Pedidos e provas"
       ],
       "foundation": "Código Civil, arts. 186 e 927.",
-      "model": "Requer-se a condenação do réu..."
+      "model": "Excelentíssimo(a) Senhor(a) Doutor(a) Juiz(a)..."
+    },
+    {
+      "id": "modelo-contestacao",
+      "title": "Modelo de contestação",
+      "summary": "Estrutura com preliminares e mérito.",
+      "requirements": [
+        "Preliminares",
+        "Impugnação específica",
+        "Pedidos finais"
+      ],
+      "foundation": "CPC, arts. 335 e 337.",
+      "model": "Excelentíssimo(a) Senhor(a) Doutor(a) Juiz(a)..."
     }
   ]
 }

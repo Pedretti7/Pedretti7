@@ -46,11 +46,10 @@ Centralizar todo o material essencial para a prova prático-profissional em **Di
 
 ## ✨ O MVP já entrega
 
-- Navegação por categorias (peças, procedimentos, recursos e modelos).
-- Cards interativos com busca rápida.
-- Painel de detalhes com checklist e fundamento legal.
-- Favoritos salvos no navegador.
-- Simulado rápido com validação básica.
+- Estrutura de páginas (home + páginas de peças, procedimentos, recursos, modelos e simulados).
+- Design system com tokens de cor, tipografia e componentes reutilizáveis.
+- Conteúdo inicial orientado por dados em JSON.
+- Busca rápida, checklist e favoritos persistidos no navegador.
 
 ## 🚀 Executar localmente
 
@@ -71,6 +70,15 @@ data/content.json
 ```
 
 Atualize títulos, requisitos e fundamentos diretamente nesse JSON para expandir o conteúdo do MVP.
+
+## 📄 Páginas disponíveis
+
+- `/index.html`
+- `/pecas.html`
+- `/procedimentos.html`
+- `/recursos.html`
+- `/modelos.html`
+- `/simulados.html`
 
 ## 📌 Próximos passos
 

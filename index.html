@@ -18,11 +18,11 @@
         <nav class="nav">
           <div class="logo">Civil OAB</div>
           <div class="nav-links">
-            <a href="#pecas">Peças</a>
-            <a href="#procedimentos">Procedimentos</a>
-            <a href="#recursos">Recursos</a>
-            <a href="#modelos">Modelos</a>
-            <a href="#simulados">Simulados</a>
+            <a href="pecas.html">Peças</a>
+            <a href="procedimentos.html">Procedimentos</a>
+            <a href="recursos.html">Recursos</a>
+            <a href="modelos.html">Modelos</a>
+            <a href="simulados.html">Simulados</a>
           </div>
           <button class="btn-primary">Entrar</button>
         </nav>
@@ -70,171 +70,72 @@
       </header>
 
       <main>
-        <section class="search" id="pecas">
+        <section class="section">
+          <div class="section-header">
+            <span class="eyebrow">Comece pela visão geral</span>
+            <h2>Navegue por cada etapa da prova prático-profissional</h2>
+            <p>
+              O MVP já possui páginas específicas para cada categoria. Escolha
+              o tipo de conteúdo e aprofunde o estudo com detalhe e checklist.
+            </p>
+          </div>
+          <div class="grid">
+            <a class="card" href="pecas.html">
+              <span>Peças</span>
+              <h3>Peças processuais</h3>
+              <p>Estrutura, requisitos e modelos guiados.</p>
+            </a>
+            <a class="card" href="procedimentos.html">
+              <span>Procedimentos</span>
+              <h3>Procedimentos especiais</h3>
+              <p>Cabimento, requisitos e artigos-chave.</p>
+            </a>
+            <a class="card" href="recursos.html">
+              <span>Recursos</span>
+              <h3>Recursos cíveis</h3>
+              <p>Prazos, preparo e fundamentos essenciais.</p>
+            </a>
+            <a class="card" href="modelos.html">
+              <span>Modelos</span>
+              <h3>Modelos comentados</h3>
+              <p>Peças explicadas passo a passo.</p>
+            </a>
+          </div>
+        </section>
+
+        <section class="section highlight">
           <div>
-            <h2>Peças processuais</h2>
+            <h2>Fluxo completo de estudo</h2>
             <p>
-              Filtre rapidamente a peça e veja a estrutura, fundamentos e um
-              modelo comentado.
+              Cada página traz busca rápida, checklist e painel de detalhes para
+              você revisar o que realmente cai.
             </p>
           </div>
-          <div class="search-actions">
-            <input
-              type="text"
-              id="search-input"
-              placeholder="Buscar peça, procedimento ou recurso"
-            />
-            <button class="btn-secondary" id="clear-search">Limpar</button>
-          </div>
-        </section>
-
-        <section class="tabs">
-          <button class="tab active" data-category="pieces">Peças</button>
-          <button class="tab" data-category="procedures">Procedimentos</button>
-          <button class="tab" data-category="resources">Recursos</button>
-          <button class="tab" data-category="models">Modelos</button>
-        </section>
-
-        <section class="grid" id="cards-container"></section>
-
-        <section class="detail" id="detail-panel">
-          <div class="detail-header">
+          <div class="highlight-grid">
             <div>
-              <span class="tag" id="detail-type">Peça</span>
-              <h3 id="detail-title">Selecione um item para ver detalhes</h3>
-              <p id="detail-summary">Clique em um card para abrir.</p>
-            </div>
-            <button class="btn-secondary" id="favorite-toggle">
-              Favoritar
-            </button>
-          </div>
-          <div class="detail-body">
-            <div>
-              <h4>Requisitos essenciais</h4>
-              <ul id="detail-requirements"></ul>
+              <h3>Buscar e filtrar</h3>
+              <p>Encontre a peça certa em segundos.</p>
             </div>
             <div>
-              <h4>Fundamento legal</h4>
-              <p id="detail-foundation"></p>
-              <h4>Modelo guiado</h4>
-              <p id="detail-model"></p>
+              <h3>Checklist prático</h3>
+              <p>Marque itens essenciais e acompanhe o progresso.</p>
+            </div>
+            <div>
+              <h3>Favoritos</h3>
+              <p>Salve o que precisa revisar depois.</p>
             </div>
           </div>
         </section>
 
-        <section class="focus" id="procedimentos">
+        <section class="cta">
           <div>
-            <h2>Procedimentos especiais com foco no que cai</h2>
+            <h2>Pronto para treinar com simulados?</h2>
             <p>
-              Quadros sintéticos com cabimento, requisitos e artigos-chave.
+              Acesse exercícios rápidos com feedback e revise fundamentos em
+              seguida.
             </p>
           </div>
-          <div class="focus-cards">
-            <article>
-              <h3>Inventário e partilha</h3>
-              <p>Rito, legitimados e requisitos essenciais.</p>
-            </article>
-            <article>
-              <h3>Ação de consignação em pagamento</h3>
-              <p>Cabimento, depósito e prazo.</p>
-            </article>
-            <article>
-              <h3>Usucapião</h3>
-              <p>Modalidades e prova necessária.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="resources" id="recursos">
-          <div class="resources-header">
-            <h2>Recursos com mapa de requisitos</h2>
-            <p>
-              Organize seus estudos com prazos, preparo e fundamentos.
-            </p>
-          </div>
-          <div class="resources-grid">
-            <div>
-              <h3>Apelação</h3>
-              <p>Prazo de 15 dias úteis e efeito devolutivo ampliado.</p>
-            </div>
-            <div>
-              <h3>Agravo de instrumento</h3>
-              <p>Hipóteses do art. 1.015 do CPC e peças obrigatórias.</p>
-            </div>
-            <div>
-              <h3>Embargos de declaração</h3>
-              <p>Omissão, contradição, obscuridade e erro material.</p>
-            </div>
-            <div>
-              <h3>Recurso especial</h3>
-              <p>Requisitos e demonstração de violação federal.</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="models" id="modelos">
-          <div>
-            <h2>Modelos comentados</h2>
-            <p>
-              Entenda o porquê de cada parágrafo com explicações claras e
-              direcionadas.
-            </p>
-          </div>
-          <div class="models-grid">
-            <div class="model-card">
-              <h3>Petição inicial</h3>
-              <p>Passo a passo com destaque de fundamentos.</p>
-              <button class="btn-secondary">Ver modelo</button>
-            </div>
-            <div class="model-card">
-              <h3>Contestação</h3>
-              <p>Estrutura estratégica com preliminares e mérito.</p>
-              <button class="btn-secondary">Ver modelo</button>
-            </div>
-            <div class="model-card">
-              <h3>Recurso de apelação</h3>
-              <p>Checklist de requisitos e preparo.</p>
-              <button class="btn-secondary">Ver modelo</button>
-            </div>
-          </div>
-        </section>
-
-        <section class="cta" id="simulados">
-          <div>
-            <h2>Simulados com correção guiada</h2>
-            <p>
-              Treine com casos práticos e receba feedback sobre fundamentação e
-              estrutura.
-            </p>
-            <div class="simulado">
-              <p id="simulado-text">
-                Caso prático: cliente busca indenização por falha na prestação
-                de serviço. Que peça você utilizaria?
-              </p>
-              <div class="simulado-actions">
-                <input
-                  type="text"
-                  id="simulado-answer"
-                  placeholder="Digite sua resposta"
-                />
-                <button class="btn-secondary" id="simulado-check">
-                  Verificar
-                </button>
-              </div>
-              <p class="simulado-feedback" id="simulado-feedback"></p>
-            </div>
-          </div>
-          <button class="btn-primary">Ir para simulados</button>
-        </section>
-
-        <section class="favorites">
-          <div>
-            <h2>Seus favoritos</h2>
-            <p>
-              Salve peças e recursos importantes para revisar depois.
-            </p>
-          </div>
-          <div class="favorites-list" id="favorites-list"></div>
+          <a class="btn-primary" href="simulados.html">Ir para simulados</a>
         </section>
       </main>
 
@@ -244,10 +145,10 @@
           <p>Foco na aprovação com revisão inteligente.</p>
         </div>
         <div class="footer-links">
-          <a href="#pecas">Peças</a>
-          <a href="#procedimentos">Procedimentos</a>
-          <a href="#recursos">Recursos</a>
-          <a href="#modelos">Modelos</a>
+          <a href="pecas.html">Peças</a>
+          <a href="procedimentos.html">Procedimentos</a>
+          <a href="recursos.html">Recursos</a>
+          <a href="modelos.html">Modelos</a>
         </div>
       </footer>
     </div>

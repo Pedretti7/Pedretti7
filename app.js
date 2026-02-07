@@ -1,25 +1,26 @@
+const getElement = (id) => document.getElementById(id);
 const tabs = document.querySelectorAll(".tab");
-const cardsContainer = document.getElementById("cards-container");
-const searchInput = document.getElementById("search-input");
-const clearSearchButton = document.getElementById("clear-search");
-const detailType = document.getElementById("detail-type");
-const detailTitle = document.getElementById("detail-title");
-const detailSummary = document.getElementById("detail-summary");
-const detailRequirements = document.getElementById("detail-requirements");
-const detailFoundation = document.getElementById("detail-foundation");
-const detailModel = document.getElementById("detail-model");
-const favoriteToggle = document.getElementById("favorite-toggle");
-const favoritesList = document.getElementById("favorites-list");
-const totalItems = document.getElementById("total-items");
-const favoriteCount = document.getElementById("favorite-count");
-const progressCount = document.getElementById("progress-count");
-const simuladoAnswer = document.getElementById("simulado-answer");
-const simuladoCheck = document.getElementById("simulado-check");
-const simuladoFeedback = document.getElementById("simulado-feedback");
+const cardsContainer = getElement("cards-container");
+const searchInput = getElement("search-input");
+const clearSearchButton = getElement("clear-search");
+const detailType = getElement("detail-type");
+const detailTitle = getElement("detail-title");
+const detailSummary = getElement("detail-summary");
+const detailRequirements = getElement("detail-requirements");
+const detailFoundation = getElement("detail-foundation");
+const detailModel = getElement("detail-model");
+const favoriteToggle = getElement("favorite-toggle");
+const favoritesList = getElement("favorites-list");
+const totalItems = getElement("total-items");
+const favoriteCount = getElement("favorite-count");
+const progressCount = getElement("progress-count");
+const simuladoAnswer = getElement("simulado-answer");
+const simuladoCheck = getElement("simulado-check");
+const simuladoFeedback = getElement("simulado-feedback");
 
 const state = {
   data: {},
-  category: "pieces",
+  category: document.body.dataset.category || "pieces",
   search: "",
   selected: null,
   favorites: new Set(JSON.parse(localStorage.getItem("favorites") || "[]")),
@@ -55,6 +56,7 @@ const getCurrentItems = () => {
 };
 
 const renderCards = () => {
+  if (!cardsContainer) return;
   cardsContainer.innerHTML = "";
   const items = getCurrentItems();
 
@@ -71,7 +73,7 @@ const renderCards = () => {
       <span>${categoryLabels[state.category]}</span>
       <h3>${item.title}</h3>
       <p>${item.summary}</p>
-      <button class="btn-secondary">Ver detalhes</button>
+      <button class="btn-secondary" type="button">Ver detalhes</button>
     `;
     card.addEventListener("click", () => selectItem(item));
     cardsContainer.appendChild(card);
@@ -79,7 +81,7 @@ const renderCards = () => {
 };
 
 const renderDetail = () => {
-  if (!state.selected) return;
+  if (!state.selected || !detailTitle) return;
   const { title, summary, requirements, foundation, model } = state.selected;
   detailType.textContent = categoryLabels[state.category];
   detailTitle.textContent = title;
@@ -105,6 +107,7 @@ const renderDetail = () => {
 };
 
 const renderFavorites = () => {
+  if (!favoritesList) return;
   favoritesList.innerHTML = "";
   const favorites = Array.from(state.favorites);
 
@@ -124,7 +127,7 @@ const renderFavorites = () => {
         <strong>${item.title}</strong>
         <p>${item.summary}</p>
       </div>
-      <button class="btn-secondary" data-id="${id}">Remover</button>
+      <button class="btn-secondary" type="button" data-id="${id}">Remover</button>
     `;
     row.querySelector("button").addEventListener("click", () => {
       toggleFavorite(id);
@@ -159,6 +162,7 @@ const toggleFavorite = (id = state.selected?.id) => {
 };
 
 const updateStats = () => {
+  if (!totalItems) return;
   const total = Object.values(state.data).flat().length || 0;
   totalItems.textContent = total.toString();
   favoriteCount.textContent = state.favorites.size.toString();
@@ -185,7 +189,7 @@ const handleSearch = (event) => {
 
 const clearSearch = () => {
   state.search = "";
-  searchInput.value = "";
+  if (searchInput) searchInput.value = "";
   renderCards();
 };
 
@@ -199,6 +203,7 @@ const handleTabClick = (event) => {
 };
 
 const handleSimulado = () => {
+  if (!simuladoAnswer || !simuladoFeedback) return;
   const answer = simuladoAnswer.value.trim().toLowerCase();
   if (!answer) {
     simuladoFeedback.textContent = "Digite uma resposta para validar.";
@@ -213,15 +218,24 @@ const handleSimulado = () => {
   }
 };
 
-favoriteToggle.addEventListener("click", () => toggleFavorite());
-searchInput.addEventListener("input", handleSearch);
-clearSearchButton.addEventListener("click", clearSearch);
-
-detailRequirements.addEventListener("change", handleChecklist);
-
-tabs.forEach((tab) => tab.addEventListener("click", handleTabClick));
-
-simuladoCheck.addEventListener("click", handleSimulado);
+if (favoriteToggle) {
+  favoriteToggle.addEventListener("click", () => toggleFavorite());
+}
+if (searchInput) {
+  searchInput.addEventListener("input", handleSearch);
+}
+if (clearSearchButton) {
+  clearSearchButton.addEventListener("click", clearSearch);
+}
+if (detailRequirements) {
+  detailRequirements.addEventListener("change", handleChecklist);
+}
+if (tabs.length > 0) {
+  tabs.forEach((tab) => tab.addEventListener("click", handleTabClick));
+}
+if (simuladoCheck) {
+  simuladoCheck.addEventListener("click", handleSimulado);
+}
 
 fetchContent();
 renderFavorites();
