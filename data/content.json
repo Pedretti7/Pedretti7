@@ -1,0 +1,96 @@
+{
+  "pieces": [
+    {
+      "id": "peticao-inicial",
+      "title": "Petição inicial",
+      "summary": "Estrutura base e requisitos do art. 319 do CPC.",
+      "requirements": [
+        "Endereçamento e qualificação",
+        "Fatos e fundamentos jurídicos",
+        "Pedidos certos e determinados",
+        "Valor da causa e provas"
+      ],
+      "foundation": "CPC, arts. 319 e 320.",
+      "model": "Excelentíssimo(a) Senhor(a) Doutor(a) Juiz(a)..."
+    },
+    {
+      "id": "contestacao",
+      "title": "Contestação",
+      "summary": "Defesa do réu com preliminares e mérito.",
+      "requirements": [
+        "Preliminares (art. 337)",
+        "Impugnação específica",
+        "Provas e documentos",
+        "Pedidos finais"
+      ],
+      "foundation": "CPC, arts. 335 e 337.",
+      "model": "Excelentíssimo(a) Senhor(a) Doutor(a) Juiz(a)..."
+    }
+  ],
+  "procedures": [
+    {
+      "id": "inventario",
+      "title": "Inventário e partilha",
+      "summary": "Regularização patrimonial após o falecimento.",
+      "requirements": [
+        "Legitimidade do inventariante",
+        "Rol de bens e dívidas",
+        "Plano de partilha"
+      ],
+      "foundation": "CPC, arts. 610-673.",
+      "model": "Requer-se a abertura de inventário..."
+    },
+    {
+      "id": "consignacao",
+      "title": "Consignação em pagamento",
+      "summary": "Extinção da obrigação mediante depósito.",
+      "requirements": [
+        "Dúvida sobre o credor",
+        "Recusa injusta do credor",
+        "Depósito integral"
+      ],
+      "foundation": "CPC, arts. 539-549.",
+      "model": "O autor deposita a quantia devida..."
+    }
+  ],
+  "resources": [
+    {
+      "id": "apelacao",
+      "title": "Apelação",
+      "summary": "Reforma da sentença com devolutividade ampla.",
+      "requirements": [
+        "Prazo de 15 dias úteis",
+        "Preparo (quando exigido)",
+        "Razões e pedidos"
+      ],
+      "foundation": "CPC, arts. 1.009-1.014.",
+      "model": "Egrégio Tribunal, razões de apelação..."
+    },
+    {
+      "id": "agravo",
+      "title": "Agravo de instrumento",
+      "summary": "Impugnação imediata de decisões interlocutórias.",
+      "requirements": [
+        "Hipóteses do art. 1.015",
+        "Peças obrigatórias",
+        "Prazo de 15 dias úteis"
+      ],
+      "foundation": "CPC, arts. 1.015-1.020.",
+      "model": "Egrégio Tribunal, agravo de instrumento..."
+    }
+  ],
+  "models": [
+    {
+      "id": "modelo-indenizacao",
+      "title": "Ação de indenização",
+      "summary": "Responsabilidade civil e danos.",
+      "requirements": [
+        "Dano, culpa e nexo causal",
+        "Provas documentais",
+        "Pedidos de indenização"
+      ],
+      "foundation": "Código Civil, arts. 186 e 927.",
+      "model": "Requer-se a condenação do réu..."
+    }
+  ]
+}
