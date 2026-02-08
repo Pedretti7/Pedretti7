@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulados | Revisão OAB Civil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="page-hero">
+        <nav class="nav">
+          <div class="logo">Civil OAB</div>
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="pecas.html">Peças</a>
+            <a href="procedimentos.html">Procedimentos</a>
+            <a href="recursos.html">Recursos</a>
+            <a href="modelos.html">Modelos</a>
+          </div>
+          <button class="btn-primary">Entrar</button>
+        </nav>
+        <div class="page-hero-content">
+          <div>
+            <span class="eyebrow">Simulados</span>
+            <h1>Treine com casos práticos e feedback imediato</h1>
+            <p>
+              Simulados rápidos para testar peças, recursos e fundamentos.
+            </p>
+          </div>
+          <div class="hero-card">
+            <h3>Dica de prova</h3>
+            <p>Leia o enunciado duas vezes antes de escolher a peça.</p>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="section">
+          <div class="section-header">
+            <h2>Simulado 01</h2>
+            <p>
+              Caso prático: cliente busca indenização por falha na prestação de
+              serviço. Qual peça é cabível?
+            </p>
+          </div>
+          <div class="simulado-card">
+            <input
+              type="text"
+              id="simulado-answer"
+              placeholder="Digite sua resposta"
+            />
+            <button class="btn-secondary" id="simulado-check">
+              Verificar
+            </button>
+            <p class="simulado-feedback" id="simulado-feedback"></p>
+          </div>
+        </section>
+
+        <section class="section highlight">
+          <div>
+            <h2>Checklist para resposta</h2>
+            <p>
+              Ao revisar simulados, confira se mencionou a peça correta, os
+              fatos e o fundamento legal principal.
+            </p>
+          </div>
+          <ul class="checklist">
+            <li>✅ Identifiquei a peça correta?</li>
+            <li>✅ Indiquei os fatos principais?</li>
+            <li>✅ Usei o fundamento legal adequado?</li>
+          </ul>
+        </section>
+      </main>
+
+      <footer>
+        <div>
+          <strong>Civil OAB</strong>
+          <p>Foco na aprovação com revisão inteligente.</p>
+        </div>
+        <div class="footer-links">
+          <a href="pecas.html">Peças</a>
+          <a href="procedimentos.html">Procedimentos</a>
+          <a href="recursos.html">Recursos</a>
+          <a href="modelos.html">Modelos</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
