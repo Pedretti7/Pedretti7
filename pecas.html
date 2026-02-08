@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR" data-category="pieces">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peças Processuais | Revisão OAB Civil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-category="pieces">
+    <div class="app">
+      <header class="page-hero">
+        <nav class="nav">
+          <div class="logo">Civil OAB</div>
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="procedimentos.html">Procedimentos</a>
+            <a href="recursos.html">Recursos</a>
+            <a href="modelos.html">Modelos</a>
+            <a href="simulados.html">Simulados</a>
+          </div>
+          <button class="btn-primary">Entrar</button>
+        </nav>
+        <div class="page-hero-content">
+          <div>
+            <span class="eyebrow">Peças processuais</span>
+            <h1>Estruturas completas das peças da 2ª fase</h1>
+            <p>
+              Revise cada peça com checklist, fundamento legal e modelo guiado.
+            </p>
+          </div>
+          <div class="hero-card">
+            <h3>Dica rápida</h3>
+            <p>Priorize endereçamento, fatos e pedidos certos.</p>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="search">
+          <div>
+            <h2>Buscar peças</h2>
+            <p>Encontre rapidamente o tipo de peça que precisa revisar.</p>
+          </div>
+          <div class="search-actions">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Buscar peça ou requisito"
+            />
+            <button class="btn-secondary" id="clear-search">Limpar</button>
+          </div>
+        </section>
+
+        <section class="grid" id="cards-container"></section>
+
+        <section class="detail" id="detail-panel">
+          <div class="detail-header">
+            <div>
+              <span class="tag" id="detail-type">Peça</span>
+              <h3 id="detail-title">Selecione uma peça</h3>
+              <p id="detail-summary">Clique em um card para ver detalhes.</p>
+            </div>
+            <button class="btn-secondary" id="favorite-toggle">
+              Favoritar
+            </button>
+          </div>
+          <div class="detail-body">
+            <div>
+              <h4>Requisitos essenciais</h4>
+              <ul id="detail-requirements"></ul>
+            </div>
+            <div>
+              <h4>Fundamento legal</h4>
+              <p id="detail-foundation"></p>
+              <h4>Modelo guiado</h4>
+              <p id="detail-model"></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="favorites">
+          <div>
+            <h2>Favoritos de peças</h2>
+            <p>Salve peças importantes para revisar depois.</p>
+          </div>
+          <div class="favorites-list" id="favorites-list"></div>
+        </section>
+      </main>
+
+      <footer>
+        <div>
+          <strong>Civil OAB</strong>
+          <p>Foco na aprovação com revisão inteligente.</p>
+        </div>
+        <div class="footer-links">
+          <a href="pecas.html">Peças</a>
+          <a href="procedimentos.html">Procedimentos</a>
+          <a href="recursos.html">Recursos</a>
+          <a href="modelos.html">Modelos</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
