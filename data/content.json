@@ -101,6 +101,54 @@
       "model": "O autor deposita a quantia devida..."
     },
     {
+      "id": "exigir-contas",
+      "title": "Ação de exigir contas",
+      "summary": "Prestação de contas em duas fases.",
+      "requirements": [
+        "Relação jurídica de administração",
+        "Demonstração do dever de prestar contas",
+        "Pedidos da primeira e segunda fase"
+      ],
+      "foundation": "CPC, arts. 550-553.",
+      "model": "Requer-se a prestação de contas..."
+    },
+    {
+      "id": "acoes-possessorias",
+      "title": "Ações possessórias",
+      "summary": "Proteção da posse: reintegração, manutenção e interdito.",
+      "requirements": [
+        "Comprovação da posse",
+        "Esbulho, turbação ou ameaça",
+        "Data do fato e pedido liminar"
+      ],
+      "foundation": "CPC, arts. 554-568.",
+      "model": "Requer-se a tutela possessória..."
+    },
+    {
+      "id": "divisao-demarcacao",
+      "title": "Ação de divisão e demarcação de terras",
+      "summary": "Fixação de limites e divisão de imóvel.",
+      "requirements": [
+        "Propriedade e matrícula",
+        "Memorial descritivo",
+        "Citação de confinantes"
+      ],
+      "foundation": "CPC, arts. 569-598.",
+      "model": "Requer-se a demarcação/divisão..."
+    },
+    {
+      "id": "dissolucao-sociedade",
+      "title": "Ação de dissolução parcial de sociedade",
+      "summary": "Retirada, exclusão ou apuração de haveres.",
+      "requirements": [
+        "Contrato social",
+        "Causa de dissolução parcial",
+        "Pedido de apuração de haveres"
+      ],
+      "foundation": "CPC, arts. 599-609.",
+      "model": "Requer-se a dissolução parcial..."
+    },
+    {
       "id": "usucapiao",
       "title": "Usucapião",
       "summary": "Aquisição de propriedade pelo tempo.",
@@ -111,6 +159,102 @@
       ],
       "foundation": "CPC, arts. 1.238-1.244 e 216-A.",
       "model": "Requer-se o reconhecimento da usucapião..."
+    },
+    {
+      "id": "embargos-terceiro",
+      "title": "Embargos de terceiro",
+      "summary": "Defesa de terceiro contra constrição judicial.",
+      "requirements": [
+        "Posse ou propriedade do bem",
+        "Prova da constrição",
+        "Legitimidade do terceiro"
+      ],
+      "foundation": "CPC, arts. 674-681.",
+      "model": "Requer-se a desconstituição da constrição..."
+    },
+    {
+      "id": "oposicao",
+      "title": "Oposição",
+      "summary": "Intervenção para discutir direito próprio sobre bem litigioso.",
+      "requirements": [
+        "Direito próprio sobre o objeto",
+        "Partes originárias identificadas",
+        "Pedidos de procedência"
+      ],
+      "foundation": "CPC, arts. 682-686.",
+      "model": "O opoente requer a procedência..."
+    },
+    {
+      "id": "habilitacao-processo",
+      "title": "Habilitação em processo",
+      "summary": "Sucessão processual por morte ou cessão.",
+      "requirements": [
+        "Prova do óbito ou cessão",
+        "Qualidade de herdeiro",
+        "Pedido de habilitação"
+      ],
+      "foundation": "CPC, arts. 687-692.",
+      "model": "Requer-se a habilitação..."
+    },
+    {
+      "id": "acoes-familia",
+      "title": "Ações de família",
+      "summary": "Procedimentos comuns às ações de família.",
+      "requirements": [
+        "Audiência de mediação/conciliação",
+        "Petição com pedidos claros",
+        "Guarda, visitas e alimentos (se cabível)"
+      ],
+      "foundation": "CPC, arts. 693-699.",
+      "model": "Requer-se a designação de audiência..."
+    },
+    {
+      "id": "acao-monitoria",
+      "title": "Ação monitória",
+      "summary": "Cobrança baseada em prova escrita sem eficácia executiva.",
+      "requirements": [
+        "Prova escrita idônea",
+        "Pedido de expedição do mandado",
+        "Conversão em execução"
+      ],
+      "foundation": "CPC, arts. 700-702.",
+      "model": "Requer-se a expedição de mandado monitório..."
+    },
+    {
+      "id": "penhor-legal",
+      "title": "Homologação do penhor legal",
+      "summary": "Confirmação judicial do penhor legal.",
+      "requirements": [
+        "Comprovação do crédito",
+        "Descrição do bem empenhado",
+        "Pedido de homologação"
+      ],
+      "foundation": "CPC, arts. 703-706.",
+      "model": "Requer-se a homologação do penhor..."
+    },
+    {
+      "id": "avaria-grossa",
+      "title": "Regulação de avaria grossa",
+      "summary": "Rateio de despesas extraordinárias na navegação.",
+      "requirements": [
+        "Comprovação do evento",
+        "Nomeação de regulador",
+        "Plano de rateio"
+      ],
+      "foundation": "CPC, arts. 707-711.",
+      "model": "Requer-se a regulação da avaria grossa..."
+    },
+    {
+      "id": "restauracao-autos",
+      "title": "Restauração de autos",
+      "summary": "Reconstrução do processo extraviado ou destruído.",
+      "requirements": [
+        "Prova do desaparecimento",
+        "Documentos e peças essenciais",
+        "Pedidos de reconstituição"
+      ],
+      "foundation": "CPC, arts. 712-718.",
+      "model": "Requer-se a restauração dos autos..."
     },
     {
       "id": "tutela-provisoria",
@@ -135,6 +279,42 @@
       ],
       "foundation": "CPC, arts. 513-538.",
       "model": "Requer-se o início do cumprimento..."
+    },
+    {
+      "id": "execucao",
+      "title": "Ação de execução",
+      "summary": "Execução fundada em título executivo extrajudicial.",
+      "requirements": [
+        "Título executivo válido",
+        "Demonstrativo do débito",
+        "Pedido de citação e penhora"
+      ],
+      "foundation": "CPC, arts. 771-925.",
+      "model": "Requer-se a execução do título..."
+    },
+    {
+      "id": "impugnacao-cumprimento",
+      "title": "Impugnação ao cumprimento de sentença",
+      "summary": "Defesa do executado na fase de cumprimento.",
+      "requirements": [
+        "Prazo de 15 dias úteis",
+        "Fundamentos do art. 525",
+        "Pedidos de efeito suspensivo"
+      ],
+      "foundation": "CPC, art. 525.",
+      "model": "Apresenta-se impugnação ao cumprimento..."
+    },
+    {
+      "id": "embargos-execucao",
+      "title": "Embargos à execução",
+      "summary": "Defesa do executado em execução de título extrajudicial.",
+      "requirements": [
+        "Garantia do juízo",
+        "Fundamentos do art. 917",
+        "Pedidos e provas"
+      ],
+      "foundation": "CPC, arts. 914-920.",
+      "model": "Apresentam-se embargos à execução..."
     }
   ],
   "resources": [
@@ -163,6 +343,18 @@
       "model": "Egrégio Tribunal, agravo de instrumento..."
     },
     {
+      "id": "agravo-interno",
+      "title": "Agravo interno",
+      "summary": "Impugnação de decisão monocrática no tribunal.",
+      "requirements": [
+        "Decisão monocrática do relator",
+        "Prazo de 15 dias úteis",
+        "Razões do inconformismo"
+      ],
+      "foundation": "CPC, art. 1.021.",
+      "model": "Egrégio Tribunal, agravo interno..."
+    },
+    {
       "id": "embargos",
       "title": "Embargos de declaração",
       "summary": "Esclarecimento de decisão omissa ou contraditória.",
@@ -173,6 +365,18 @@
       ],
       "foundation": "CPC, art. 1.022.",
       "model": "Requer-se o saneamento da decisão..."
+    },
+    {
+      "id": "recurso-ordinario",
+      "title": "Recurso ordinário",
+      "summary": "Recurso ao STF ou STJ em hipóteses específicas.",
+      "requirements": [
+        "Cabimento constitucional",
+        "Prazo de 15 dias úteis",
+        "Razões do recurso"
+      ],
+      "foundation": "CPC, art. 1.027; CF, arts. 102 e 105.",
+      "model": "Egrégio Tribunal, razões de recurso ordinário..."
     },
     {
       "id": "recurso-especial",
@@ -197,6 +401,30 @@
       ],
       "foundation": "CF, art. 102, III; CPC, arts. 1.029-1.041.",
       "model": "Egrégio STF, razões de recurso extraordinário..."
+    },
+    {
+      "id": "agravo-resp-re",
+      "title": "Agravo em recurso especial ou extraordinário",
+      "summary": "Destranca REsp ou RE inadmitido na origem.",
+      "requirements": [
+        "Decisão de inadmissão",
+        "Prazo de 15 dias úteis",
+        "Razões do agravo"
+      ],
+      "foundation": "CPC, art. 1.042.",
+      "model": "Egrégio Tribunal, agravo em recurso..."
+    },
+    {
+      "id": "embargos-divergencia",
+      "title": "Embargos de divergência",
+      "summary": "Uniformização da jurisprudência interna do STJ/STF.",
+      "requirements": [
+        "Divergência entre órgãos internos",
+        "Indicação de acórdãos paradigma",
+        "Razões do dissídio"
+      ],
+      "foundation": "CPC, art. 1.043.",
+      "model": "Egrégio Tribunal, embargos de divergência..."
     }
   ],
   "models": [

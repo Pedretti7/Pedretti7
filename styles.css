@@ -1,14 +1,14 @@
 :root {
   color-scheme: light;
-  --bg: #f6f8fb;
+  --bg: #f4f1ec;
   --card: #ffffff;
-  --text: #0f172a;
-  --muted: #475569;
-  --primary: #1f3a93;
-  --primary-soft: #e4e9f9;
-  --accent: #0f766e;
-  --border: #e2e8f0;
-  --shadow: 0 25px 50px -20px rgba(15, 23, 42, 0.25);
+  --text: #1c1b1f;
+  --muted: #6b625a;
+  --primary: #7a3b2e;
+  --primary-soft: #f3e3d6;
+  --accent: #c29a4a;
+  --border: #e3d6c8;
+  --shadow: 0 24px 48px -24px rgba(79, 50, 36, 0.35);
 }
 
 * {
@@ -38,7 +38,7 @@ a {
 .hero,
 .page-hero {
   padding: 32px 80px 48px;
-  background: linear-gradient(120deg, #f8fafc 0%, #eef2ff 50%, #f6f8fb 100%);
+  background: linear-gradient(120deg, #f8f1e8 0%, #f3e3d6 50%, #f4f1ec 100%);
   border-bottom: 1px solid var(--border);
 }
 
@@ -81,7 +81,7 @@ a {
 .btn-primary {
   background: var(--primary);
   color: #fff;
-  box-shadow: 0 10px 20px -12px rgba(31, 58, 147, 0.6);
+  box-shadow: 0 12px 24px -16px rgba(122, 59, 46, 0.7);
 }
 
 .btn-secondary {
@@ -127,8 +127,8 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #e0f2fe;
-  color: #075985;
+  background: #f7e9da;
+  color: #7a3b2e;
   padding: 6px 14px;
   border-radius: 999px;
   font-weight: 600;
@@ -190,7 +190,7 @@ main {
 }
 
 .highlight {
-  background: #f8fafc;
+  background: #fbf6ef;
   padding: 32px;
   border-radius: 24px;
   border: 1px solid var(--border);
@@ -306,8 +306,8 @@ main {
   display: inline-flex;
   padding: 4px 10px;
   border-radius: 999px;
-  background: #ecfeff;
-  color: #0e7490;
+  background: #f8eddf;
+  color: #7a3b2e;
   font-size: 12px;
   font-weight: 600;
 }
@@ -336,7 +336,7 @@ main {
 }
 
 .cta {
-  background: linear-gradient(120deg, #1f3a93 0%, #0f766e 100%);
+  background: linear-gradient(120deg, #7a3b2e 0%, #a0553e 100%);
   color: #fff;
   padding: 32px;
   border-radius: 24px;
