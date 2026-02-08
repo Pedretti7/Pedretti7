@@ -37,6 +37,42 @@
       ],
       "foundation": "Código Civil, arts. 186 e 927.",
       "model": "Requer-se a condenação do réu..."
+    },
+    {
+      "id": "acao-usucapiao",
+      "title": "Ação de usucapião",
+      "summary": "Reconhecimento judicial da aquisição da propriedade.",
+      "requirements": [
+        "Posse mansa e pacífica",
+        "Decurso do prazo legal",
+        "Planta e memorial descritivo"
+      ],
+      "foundation": "CPC, art. 216-A; CC, arts. 1.238-1.244.",
+      "model": "Requer-se o reconhecimento da usucapião..."
+    },
+    {
+      "id": "acao-divorcio",
+      "title": "Ação de divórcio",
+      "summary": "Dissolução do casamento com partilha e guarda.",
+      "requirements": [
+        "Partes qualificadas",
+        "Regime de bens e partilha",
+        "Guarda e alimentos (se houver)"
+      ],
+      "foundation": "CF, art. 226, §6º; CPC, arts. 693-699.",
+      "model": "Requer-se a decretação do divórcio..."
+    },
+    {
+      "id": "acao-alimentos",
+      "title": "Ação de alimentos",
+      "summary": "Fixação de alimentos provisórios e definitivos.",
+      "requirements": [
+        "Necessidade do alimentando",
+        "Possibilidade do alimentante",
+        "Pedidos de alimentos provisórios"
+      ],
+      "foundation": "Lei 5.478/68; CPC, arts. 693-699.",
+      "model": "Requer-se a fixação de alimentos..."
     }
   ],
   "procedures": [
@@ -75,6 +111,30 @@
       ],
       "foundation": "CPC, arts. 1.238-1.244 e 216-A.",
       "model": "Requer-se o reconhecimento da usucapião..."
+    },
+    {
+      "id": "tutela-provisoria",
+      "title": "Tutela provisória",
+      "summary": "Urgência e evidência com decisão liminar.",
+      "requirements": [
+        "Probabilidade do direito",
+        "Perigo de dano ou risco ao resultado útil",
+        "Reversibilidade da medida"
+      ],
+      "foundation": "CPC, arts. 294-311.",
+      "model": "Requer-se a concessão de tutela provisória..."
+    },
+    {
+      "id": "cumprimento-sentenca",
+      "title": "Cumprimento de sentença",
+      "summary": "Fase executiva para satisfação do título judicial.",
+      "requirements": [
+        "Memória de cálculo",
+        "Intimação do devedor",
+        "Pedido de penhora"
+      ],
+      "foundation": "CPC, arts. 513-538.",
+      "model": "Requer-se o início do cumprimento..."
     }
   ],
   "resources": [
@@ -113,6 +173,30 @@
       ],
       "foundation": "CPC, art. 1.022.",
       "model": "Requer-se o saneamento da decisão..."
+    },
+    {
+      "id": "recurso-especial",
+      "title": "Recurso especial",
+      "summary": "Uniformização da interpretação da lei federal.",
+      "requirements": [
+        "Violação de lei federal",
+        "Prequestionamento",
+        "Demonstração da divergência"
+      ],
+      "foundation": "CF, art. 105, III; CPC, arts. 1.029-1.041.",
+      "model": "Egrégio STJ, razões de recurso especial..."
+    },
+    {
+      "id": "recurso-extraordinario",
+      "title": "Recurso extraordinário",
+      "summary": "Discussão de matéria constitucional.",
+      "requirements": [
+        "Repercussão geral",
+        "Questão constitucional",
+        "Prequestionamento"
+      ],
+      "foundation": "CF, art. 102, III; CPC, arts. 1.029-1.041.",
+      "model": "Egrégio STF, razões de recurso extraordinário..."
     }
   ],
   "models": [
@@ -139,6 +223,30 @@
       ],
       "foundation": "CPC, arts. 335 e 337.",
       "model": "Excelentíssimo(a) Senhor(a) Doutor(a) Juiz(a)..."
+    },
+    {
+      "id": "modelo-apelacao",
+      "title": "Modelo de apelação",
+      "summary": "Estrutura com razões e pedidos claros.",
+      "requirements": [
+        "Endereçamento ao tribunal",
+        "Razões recursais",
+        "Pedidos de reforma"
+      ],
+      "foundation": "CPC, arts. 1.009-1.014.",
+      "model": "Egrégio Tribunal, razões de apelação..."
+    },
+    {
+      "id": "modelo-divorcio",
+      "title": "Modelo de ação de divórcio",
+      "summary": "Peça comentada com partilha e guarda.",
+      "requirements": [
+        "Qualificação das partes",
+        "Regime de bens",
+        "Pedidos de guarda e alimentos"
+      ],
+      "foundation": "CF, art. 226, §6º; CPC, arts. 693-699.",
+      "model": "Requer-se a decretação do divórcio..."
     }
   ]
 }
